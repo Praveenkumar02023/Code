@@ -1,0 +1,37 @@
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+int main() {
+    int n ;
+    cin>>n;
+    vector<int> arr;
+    vector<int> ans;
+    while(n){
+        int num;
+        cin>>num;
+        arr.push_back(num);
+        n--;
+
+    }
+    long long prod = 1;
+    int i = 0;
+    while(i < arr.size()-1){
+        prod = prod * arr[i];
+        i++;
+    }
+    
+    i = 0;
+    while(i < arr.size()-1){
+      int  elem = prod/arr[i];
+        ans.push_back(elem);
+        i++;
+    }
+    i = 0;
+    while(i < ans.size()-1){
+        cout<< ans[i] ;
+        i++;
+    }
+
+}
