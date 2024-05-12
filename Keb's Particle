@@ -1,3 +1,33 @@
+***Question******
+Keb is an experimental physicist. His works primarily relate to the field of Subatomic particles.
+Keb is working on behavior of certain particles, which he calls Z-particles. These particles tend to interact with every other particle in its group. Keb worked out that, similar to electrons experiencing the Screening Effect in an atom, every other Z-particle experiences a similar effect. If he places N of these particles in a contained environment where each Z-particle has some amount of charge Ai, then the effect on ith particle is the product of the charge of every other particle in the system.
+
+Keb has set up a system which has N number of Z-particles. An array A, of size N is given where Ai is the charge on the ith particle. Find the effect on each of the Z-particles in the given system.
+
+Input Format
+First line contains an integer N.
+Second line contains N space separated integers, denoting the charge Ai.
+
+Constraints
+1 <= N <= 105
+|Ai| <= 100
+
+Output Format
+Print the effect on the particles of the system in a space-separated manner.
+
+Sample Input
+3
+1 2 3
+Sample Output
+6 3 2
+Explanation
+The System has 3 particles, wherein effect on 1st particle is 2 × 3 = 6, on 2nd particle is 1 × 3, and on 3rd particle is 1 × 2, giving the output as 6, 3, 2.
+Note: Multiplying all the charges and dividing the product by the charge for ith Z-particle, to calculate the effect on it, may give unexpected results.
+
+******solution*********
+
+
+
 #include <iostream>
 #include <vector>
 
